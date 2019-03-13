@@ -1,0 +1,44 @@
+<html>
+<head>
+
+<title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="login-page">
+      <div class="form">
+          <img type="file" class="profile-pic" src="bg1.jpeg" >
+        
+    <!-- Register-form -->
+        <form class="register-form">
+            <input type="file" />
+            <input type="email" placeholder="admin@admin.com" />
+            <input type="password" placeholder="Password" value="" />
+            <input type="text" placeholder="Username" />
+            <input type="date" placeholder="Date of Birth" />
+            <button>Register</button>
+            <p class="message">Already Registered? <a href="#">Login</a></p>
+        </form>
+        
+    <!-- Login-form -->
+        <form class="login-form">
+          <input type="text" placeholder="Username" />
+          <input type="password" placeholder="Password" value="" />
+            <button>Login</button>
+            <p class="message">Not Registered? <a href="#">Register</a></p>
+        </form>
+      </div>
+    </div>
+    
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height:"toggle", opacity: "toggle"});
+        });
+    </script>
+
+</body>
+
+</html>
